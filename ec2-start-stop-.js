@@ -22,7 +22,6 @@ exports.handler = function(event, context) {
 		var ec2 = new aws.EC2();
 	
 		var params = {
-			//InstanceIds: [ "i-94fd450f" ]
 			Filters: [
 				{
 					Name: 'tag:' + tagKey,
